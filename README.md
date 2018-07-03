@@ -1,8 +1,10 @@
 # Dng Components
 
+This is an open source library with customizable components, we'll keep adding components. This library doesn't plan to be anything like [material/cdk](https://material.angular.io/cdk/categories) or [PrimeNG](https://www.primefaces.org/primeng/) they have excellent components. 
+
 ## How to start
 1. Clone the repo, install dependencies (using `yarn install` command).
-2. Run `yarn start` to start the server (in _watch_ mode)
+2. Run `yarn start` to start the server (in watch mode)
 3. Open [localhost:4200](http://localhost:4200) and develop
 
 ## Yarn commands
@@ -37,3 +39,15 @@ import { DngComponentsLibModule } from 'dng-components';
 })
 export class MyModule { }
 ```
+
+# Contribute
+Open to contributions :)
+
+[Issue tracker](https://github.com/deftone42/dng-components/issues)
+You can grab the source code at the package's Git repository.
+
+# Support
+Email: deftone42@gmail.com
+
+# Authors
+deftone42 ([twitter](https://twitter.com/Deftone21))
