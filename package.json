@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start:debug": "echo 'Debug mode (slow), with source maps etc' && ng serve -c debug",
     "build": "ng build",
     "build:lib": "ng build --prod dng-components-lib",
     "test": "ng test",

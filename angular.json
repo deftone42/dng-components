@@ -28,6 +28,10 @@
             "scripts": []
           },
           "configurations": {
+            "debug": {
+              "sourceMap": true,
+              "extractCss": true
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -53,6 +57,9 @@
             "browserTarget": "dng-components:build"
           },
           "configurations": {
+            "debug": {
+              "browserTarget": "dng-components:build:debug"
+            },
             "production": {
               "browserTarget": "dng-components:build:production"
             }
