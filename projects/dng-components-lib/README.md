@@ -20,3 +20,10 @@ import { DngComponentsLibModule } from 'dng-components';
 })
 export class MyModule { }
 ```
+
+## Releasing
+
+* Run yarn build:lib` to compile latest version
+* Run `yarn release` to update package version
+* Go to `projects/dng-components-lib/src/package.json` and update the version there too
+* Finally run `npm publish` (you need to be logged in NPM and have permissions)

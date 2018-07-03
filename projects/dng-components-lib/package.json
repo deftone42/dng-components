@@ -1,6 +1,23 @@
 {
   "name": "dng-components",
-  "version": "0.0.1",
+  "version": "1.0.1",
+  "description": "Library with set of Angular components",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deftone42/dng-components.git"
+  },
+  "bugs": {
+    "url": "https://github.com/deftone42/dng-components/issues"
+  },
+  "license": "ISC",
+  "homepage": "https://github.com/deftone42/dng-components",
+  "keywords": [
+    "angular",
+    "ng",
+    "components",
+    "Javascript",
+    "JS"
+  ],
   "peerDependencies": {
     "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
     "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
