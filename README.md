@@ -1,27 +1,53 @@
-# DngComponents
+# Dng Components
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.7.
+This is an open source library with customizable components, we'll keep adding components. This library doesn't plan to be anything like [material/cdk](https://material.angular.io/cdk/categories) or [PrimeNG](https://www.primefaces.org/primeng/) they have excellent components. 
 
-## Development server
+## How to start
+1. Clone the repo, install dependencies (using `yarn install` command).
+2. Run `yarn start` to start the server (in watch mode)
+3. Open [localhost:4200](http://localhost:4200) and develop
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Yarn commands
 
-## Code scaffolding
+#### Development
+* `yarn start` to compile app and serve it on [localhost:4500](http://localhost:4500)
+* `yarn start:debug` to compile the app in debug mode.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+#### Building
+* `yarn build` to build/compile all packages (fast, without AoT)
+* `yarn build:lib` to build/compile the library
 
-## Build
+# Dng Components Lib
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Set of Angular components ready to use
 
-## Running unit tests
+## Installation
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+run `npm install dng-components` or `yarn add dng-components`
 
-## Running end-to-end tests
+## How to use
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Simply add `DngComponentsLibModule` to your module
 
-## Further help
+```
+import { DngComponentsLibModule } from 'dng-components';
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+@NgModule({
+  imports: [
+    DngComponentsLibModule,
+  ],
+})
+export class MyModule { }
+```
+
+# Contribute
+Open to contributions :)
+
+[Issue tracker](https://github.com/deftone42/dng-components/issues)
+You can grab the source code at the package's Git repository.
+
+# Support
+Email: deftone42@gmail.com
+
+# Authors
+deftone42 ([twitter](https://twitter.com/Deftone21))

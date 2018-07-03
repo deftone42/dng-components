@@ -9,12 +9,14 @@
 ///     <li class="dng-tag selected">tag 5</li>
 ///   </ul>
 ///
-.dng-tags {
+:host {
   --tag-selected-bg-color: #ffc400;
   --tag-selected-text-color: #FFFFFF;
   --tag-default-color: transparent;
   --tag-hover-text-color: #ffc400;
+}
 
+.dng-tags {
   // UL
   margin-left: 0;
   display: flex;
