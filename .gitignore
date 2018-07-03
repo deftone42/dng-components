@@ -3,19 +3,21 @@
 # compiled output
 /dist
 /tmp
-/out-tsc
 
 # dependencies
-/node_modules
+node_modules
 
 # IDEs and editors
-/.idea
+.idea/*
+!.idea/d2-core.iml
+!.idea/modules.xml
+!.idea/codeStyles/
+!.idea/scopes/
 .project
 .classpath
 .c9/
 *.launch
 .settings/
-*.sublime-workspace
 
 # IDE - VSCode
 .vscode/*
@@ -27,13 +29,20 @@
 # misc
 /.sass-cache
 /connect.lock
-/coverage
+coverage
 /libpeerconnection.log
 npm-debug.log
 yarn-error.log
 testem.log
-/typings
 
-# System Files
+# Workaround to .css inlining: during tests Karma doesn't inline, so we need compiled .css in src dir
+# We pre-compile them in pre-test task, but we want to ignore all of them.
+# @see 'build:packages:pre' gulp task
+**/src/**/*.css
+
+# Ignore output from SassDoc
+/src/app/stylebook/sassdoc/
+
+#System Files
 .DS_Store
 Thumbs.db

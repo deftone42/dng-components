@@ -23,7 +23,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -72,7 +72,7 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": [],
             "assets": [
@@ -115,6 +115,46 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": "e2e/tsconfig.e2e.json",
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "dng-components-lib": {
+      "root": "projects/dng-components-lib",
+      "sourceRoot": "projects/dng-components-lib/src",
+      "projectType": "library",
+      "prefix": "dng",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/dng-components-lib/tsconfig.lib.json",
+            "project": "projects/dng-components-lib/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/dng-components-lib/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/dng-components-lib/src/test.ts",
+            "tsConfig": "projects/dng-components-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/dng-components-lib/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/dng-components-lib/tsconfig.lib.json",
+              "projects/dng-components-lib/tsconfig.spec.json"
+            ],
             "exclude": [
               "**/node_modules/**"
             ]
