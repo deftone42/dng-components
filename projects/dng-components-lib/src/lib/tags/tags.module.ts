@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 import { DngTagsComponent } from './tags.component';
-import {CommonModule} from "@angular/common";
+import { DngTagComponent } from './tag.component';
 
 const EXPORT_IMPORT_DECLARATIONS = [
-  DngTagsComponent
+  DngTagsComponent,
+  DngTagComponent,
 ];
 
 @NgModule({

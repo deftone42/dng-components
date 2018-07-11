@@ -1,12 +1,12 @@
 /// Tags
 ///
 /// @example
-///   <ul class="dng-tags">
-///     <li class="dng-tag">tag 1</li>
-///     <li class="dng-tag">tag 2</li>
-///     <li class="dng-tag">tag 3</li>
-///     <li class="dng-tag">tag 4</li>
-///     <li class="dng-tag selected">tag 5</li>
+///   <dng-tags>
+///     <dng-tag>tag 1</dng-tag>
+///     <dng-tag>tag 2</dng-tag>
+///     <dng-tag>tag 3</dng-tag>
+///     <dng-tag>tag 4</dng-tag>
+///     <dng-tag class="selected">tag 5</dng-tag>
 ///   </ul>
 ///
 :host {
@@ -22,31 +22,4 @@
   display: flex;
   flex-flow: wrap;
   list-style-type: none;
-}
-.dng-tag {
-  // LI
-  display: inline-flex;
-  align-items: center;
-  margin-right: 0.5rem;
-  margin-bottom: 0.5rem;
-  border-radius: 40px;
-  border: 1px solid;
-  line-height: 36px;
-  background-color: var(--tag-default-color);
-  cursor: pointer;
-  box-sizing: border-box;
-  padding: 0 0.5rem;
-
-  &:hover {
-    color: var(--tag-hover-text-color);
-  }
-
-  &.selected {
-    background-color: var(--tag-selected-bg-color);
-    color: var(--tag-selected-text-color);
-    border-color: var(--tag-selected-bg-color);
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    font-weight: 300;
-  }
 }

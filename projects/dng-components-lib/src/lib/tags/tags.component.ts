@@ -1,14 +1,12 @@
-import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
+import { Component, ChangeDetectionStrategy, Input, HostBinding } from '@angular/core';
 
 @Component({
   selector: 'dng-tags',
-  host: {
-    class: 'dng-tags',
-  },
   templateUrl: './tags.component.html',
   styleUrls: ['./tags.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class DngTagsComponent {
-  @Input() public tags: string[] = [];
+  @HostBinding('attr.class') class = 'dng-tags-container';
+  @Input() public tags?: string[];
 }

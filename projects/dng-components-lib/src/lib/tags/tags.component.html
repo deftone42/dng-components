@@ -1,5 +1,9 @@
-<ul class="dng-tags">
-  <li class="dng-tag" *ngFor="let tag of tags">
-    <span>{{ tag }}</span>
-  </li>
+<ul class="dng-tags" *ngIf="tags; else customTags">
+  <dng-tag *ngFor="let tag of tags" [tag]="tag"></dng-tag>
 </ul>
+
+<ng-template #customTags>
+  <ul class="dng-tags">
+    <ng-content></ng-content>
+  </ul>
+</ng-template>
